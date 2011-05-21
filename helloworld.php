@@ -29,3 +29,10 @@ $helloWorld = "++++++++++
 
 $interpreter = new BrainFuck\Interpreter();
 $interpreter->interpret($helloWorld);
+
+$mail = ">+++++++++[<+++++++++++++>-]<+.-------------.+++..-------.++++++++++++++.>++++++[<----------->-]<-.+.+++++++++++++++.>+++++[<++++++++>-]<+.++.--.>++++++[<---------->-]<+.>+++++++[<++++++++>-]<.+++.";
+
+$interpreter = new BrainFuck\Interpreter();
+$interpreter->interpret($mail);
+
+$interpreter->interpret("+++++++>++++++++++[<++++++++++>]");

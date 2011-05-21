@@ -8,11 +8,19 @@ Overview
 
 Why?
 ----
-Because I wanted to learn more about writing parsers / interpreters and
+Because I wanted to learn more about writing parsers / interpreters and my PM was named Okke,
+which reminded me of the Ook! language.
 
 Usage
 -----
+Note that this is a toy interpreter and has not optimizations.
 
+Auto-matching of [ or JUMP_IF_ZERO
+----------------------------------
+If you use the \[ command but do not provide a \] then the interpreter will assume
+that you meant to close it at the end of the file.
+So the following is completely valid:
++++++++++++[-.
 
 Installation
 ------------
@@ -20,7 +28,8 @@ Installation
 
 Acknowledgements
 ----------------
-Thanks to Okke Harsta, my PM @ the SURFconext project by SURFnet (thank you!).
+Thanks to Okke Harsta, my PM @ the SURFconext project by SURFnet for inspiration.
+Thanks to Martin Fowler for his book '[Domain Specific Languages](http://martinfowler.com/books.html#dsl)'.
 
 License
 -------
