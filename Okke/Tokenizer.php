@@ -8,12 +8,12 @@ class Tokenizer extends BrainFuck\Tokenizer
     protected $_tokenLength = 11;
 
     protected $_tokens = array(
-        'INC_POINTER'   => 'Okke. Okke?',
-        'DEC_POINTER'   => 'Okke? Okke.',
-        'INC_MEMORY'    => 'Okke. Okke.',
-        'DEC_MEMORY'    => 'Okke! Okke!',
-        'OUT'           => 'Okke! Okke.',
-        'IN'            => 'Okke. Okke!',
+        'POINTER_INC'   => 'Okke. Okke?',
+        'POINTER_DEC'   => 'Okke? Okke.',
+        'MEMORY_INC'    => 'Okke. Okke.',
+        'MEMORY_DEC'    => 'Okke! Okke!',
+        'OUT_CHAR'      => 'Okke! Okke.',
+        'IN_CHAR'       => 'Okke. Okke!',
         'WHILE_START'   => 'Okke! Okke?',
         'WHILE_END'     => 'Okke? Okke!',
     );

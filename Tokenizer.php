@@ -103,7 +103,7 @@ class Tokenizer
             return true;
         }
 
-        // TAB
+        // space
         if (substr($this->_input, 0, 1) === " ") {
             $this->debug("Matched space");
             $this->_input = substr($this->_input, 1);
