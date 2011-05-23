@@ -2,10 +2,21 @@
 
 namespace BrainFuck;
 
+/**
+ * A fixed token length tokenizer for BrainFuck and descendant languages.
+ *
+ * 
+ */
 class Tokenizer
 {
+    /**
+     * @var int
+     */
     protected $_tokenLength = 1;
 
+    /**
+     * @var array
+     */
     protected $_tokens = array(
         'POINTER_INC'   => '>',
         'POINTER_DEC'   => '<',
@@ -17,19 +28,41 @@ class Tokenizer
         'WHILE_END'     => ']',
     );
 
+    /**
+     * @var string
+     */
     protected $_input;
 
+    /**
+     * @var int
+     */
     protected $_line;
+
+    /**
+     * @var int
+     */
     protected $_char;
 
+    /**
+     * @var array
+     */
     protected $_tokenBuffer = array();
 
+    /**
+     * @var array
+     */
     protected $_warnings = array();
 
     public function __construct()
     {
     }
 
+    /**
+     * Tokenize a source code file.
+     *
+     * @param string $input
+     * @return array
+     */
     public function tokenize($input)
     {
         $this->_input = $input;
